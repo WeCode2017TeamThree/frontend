@@ -7,18 +7,27 @@
     <form (ngSubmit)="onSubmit(locationForm)" #locationForm="ngForm">
       <div class="form-group">
         <div class="form-group">
+          <label for="features">Features</label>
+          <label for="restrooms">Restrooms</label>
+          <input type="checkbox" name="restrooms" ngModel>
+          <label for="wifi">Wi-Fi</label>
+          <input type="checkbox" name="wifi" ngModel>
+          <label for="charge-phone">Phone Charging</label>
+          <input type="checkbox" name="charge-phone" ngModel>
+          <label for="shower">Shower</label>
+          <input type="checkbox" name="shower" ngModel>
+          <label for="laundry">Laundry</label>
+          <input type="checkbox" name="laundry" ngModel>
+          <label for="camp">Camping</label>
+          <input type="checkbox" name="camp" ngModel>
+        </div>
+        <div class="form-group">
           <label for="name">Location Name</label>
           <input type="text" class="form-control" id="name" ngModel name="name">
         </div>
         <div class="form-group">
           <label for="address">Address</label>
           <input type="text" class="form-control" id="address" ngModel name="address">
-        </div>
-        <div class="form-group">
-          <label for="feature">Feature</label>
-          <select class="form-control" id="feature" ngModel name="feature">
-            <option *ngFor="let feature of features" [value]="feature">{{feature}}</option>
-          </select>
         </div>
         <div class="form-group">
           <label for="comment">Comments</label>
