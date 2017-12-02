@@ -8,15 +8,20 @@
 <div class="container">
 
   <ngb-tabset>
-    <ngb-tab title="Simple">
+    <ngb-tab title="Map">
       <ng-template ngbTabContent>
         <app-filters [filters]="filters"></app-filters>
         <app-map></app-map>
       </ng-template>
     </ngb-tab>
-    <ngb-tab title="Simple">
+    <ngb-tab title="Add Location">
       <ng-template ngbTabContent>
         <app-form></app-form>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="About">
+      <ng-template ngbTabContent>
+        <app-about></app-about>
       </ng-template>
     </ngb-tab>
   </ngb-tabset>

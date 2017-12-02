@@ -7,6 +7,7 @@ import { CoreRoutingModule } from './core-routing.module';
 import { HomeComponent } from '../home/home.component';
 import { MapComponent } from '../map/map.component';
 import { FormComponent } from '../form/form.component';
+import { AboutComponent } from '../about/about.component';
 
 import { AgmCoreModule } from '@agm/core';
 import { ApiService } from '../api.service';
@@ -28,6 +29,7 @@ import { HttpModule } from '@angular/http';
     HomeComponent,
     MapComponent,
     FormComponent,
+    AboutComponent,
     FiltersComponent
   ],
   providers: [ApiService]
