@@ -1,0 +1,25 @@
+<p>
+  form works!
+</p>
+<div class="container">
+  <div [hidden]="submitted">
+    <h1>Add Location Form</h1>
+    <form (ngSubmit)="onSubmit(locationForm)" #locationForm="ngForm">
+      <div class="form-group">
+        <label for="name">Location Name</label>
+        <input type="text" class="form-control" id="name" ngModel name="name">
+        <label for="address">Address</label>
+        <input type="text" class="form-control" id="address" ngModel name="address">
+        <label for="feature">Feature</label>
+        <select class="form-control" id="feature" ngModel name="feature">
+          <option *ngFor="let feature of features" [value]="feature">{{feature}}</option>
+        </select>
+        <label for="comment">Comments</label>
+        <input type="text" class="form-control" id="comment" ngModel name="comment">
+        <label for="added-by">Added by</label>
+        <input type="text" class="form-control" id="added-by" ngModel name="added-by">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+</div>
