@@ -1,0 +1,20 @@
+<!-- feature type
+name
+
+restrooms
+wifi
+charge_phone
+shower
+laundry
+camp -->
+
+<form #filterForm="ngForm" (ngSubmit)="onSubmit(filterForm)">
+  <!-- <label for="name">Name:</label>
+  <input type="text" name="name" ngModel>
+  <label for="feature_type">Feature:</label>
+  <select name="feature_type" ngModel>
+    <option *ngFor="let option of features" value="{{option}}">{{option}}</option>
+  </select> -->
+  <label *ngFor="let option of features" for="{{option}}">{{option}}: <input type="checkbox" name="{{option}}" value="{{option}}" ngModel></label>
+  <button type="submit">Submit</button>
+</form>

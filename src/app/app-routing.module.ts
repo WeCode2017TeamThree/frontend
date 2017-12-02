@@ -6,7 +6,8 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: './core/core.module#CoreModule'
+    // loadChildren: './core/core.module#CoreModule'
+    component: HomeComponent
   }
 ];
 
