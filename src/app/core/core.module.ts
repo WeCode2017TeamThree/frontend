@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { CoreRoutingModule } from './core-routing.module';
 import { HomeComponent } from '../home/home.component';
@@ -20,7 +21,8 @@ import { HttpModule } from '@angular/http';
       apiKey: 'AIzaSyAPwigZHPp6qPQ2Sf2S22cH44gd0lTUa3s'
     }),
     FormsModule,
-    HttpModule
+    HttpModule,
+    NgbModule.forRoot()
   ],
   declarations: [
     HomeComponent,

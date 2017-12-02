@@ -1,5 +1,25 @@
-<h1>Word of Mouth</h1>
-<app-filters [filters]="filters"></app-filters>
-<app-map></app-map>
-<app-form></app-form>
 
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href=#><img src="../assets/WoM.png"></a>
+    <h1 style="text-align: left;font-family: inherit ; color: blue"> WORD OF MOUTH </h1>
+</nav>
+
+<div class="container">
+
+  <ngb-tabset>
+    <ngb-tab title="Simple">
+      <ng-template ngbTabContent>
+        <app-filters [filters]="filters"></app-filters>
+        <app-map></app-map>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Simple">
+      <ng-template ngbTabContent>
+        <app-form></app-form>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+  
+  <footer>© Cerberus 2017 ~ WeCode Hackathon December 2, 2017</footer>
+</div>
