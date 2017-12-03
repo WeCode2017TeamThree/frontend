@@ -3,8 +3,8 @@
 This frontend project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5. Also used: Bootstrap.
 The backend was written with Twisted Klein and Python.
 
-* [link to deployed site]: https://wayfarer-glyphs.herokuapp.com/
-* [link to backend repo]: https://github.com/WeCode2017TeamThree/backend
+* live site: https://wayfarer-glyphs.herokuapp.com/
+* backend repo: https://github.com/WeCode2017TeamThree/backend
 
 ## Development server
 
